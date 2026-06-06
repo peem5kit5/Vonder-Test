@@ -44,8 +44,10 @@ Assets/Scenes/Game.unity
 
 # Interactable Objects
 
-## NPC : interact for dialogue, it can't be interact if sequence have item condition.
-## Coin : only spawn when first sequence was finished, interact for unlock next sequence from npc.
+## NPC : 
+interact for dialogue, it can't be interact if sequence have item condition.
+## Coin : 
+only spawn when first sequence was finished, interact for unlock next sequence from npc.
 
 ---
 
