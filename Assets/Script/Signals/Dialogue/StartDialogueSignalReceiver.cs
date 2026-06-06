@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
-public class DialogueSignalReceiver : MonoBehaviour, INotificationReceiver
+public class StartDialogueSignalReceiver : MonoBehaviour, INotificationReceiver
 {
     private bool isInitDialogue;
 

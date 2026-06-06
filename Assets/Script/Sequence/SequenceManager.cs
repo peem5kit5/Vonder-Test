@@ -6,7 +6,7 @@ public class SequenceManager : MonoBehaviour
 {
     [Header("Reference")]
     [SerializeField] private Transform sequenceContainer;
-    [SerializeField] private DialogueSignalReceiver dialogueSignalReceiver;
+    [SerializeField] private StartDialogueSignalReceiver dialogueSignalReceiver;
 
     private PlayableDirector currentPlayableDirector;
     public SequenceInfo CurrentSequenceInfo { get; private set; }
@@ -105,11 +105,6 @@ public class SequenceManager : MonoBehaviour
 
             PlayerInstanceData.SetPlayerStepIndex(CurrentSequenceIndex + 1);
             PlayerInstanceData.SetControl(true);
-
-            if (sequenceInfos[CurrentSequenceIndex] != null && !string.IsNullOrEmpty(sequenceInfos[CurrentSequenceIndex].ItemConditionId))
-            {
-
-            }
         }
     }
 }

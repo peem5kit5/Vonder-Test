@@ -16,5 +16,5 @@ MonoBehaviour:
   Dialogue: 'What do you need?
 
 '
-  IsPauseDialogueAfterFinishTyping: 0
+  IsPauseDialogueAfterFinishTyping: 1
   IsCameraTargetSpeaker: 1
