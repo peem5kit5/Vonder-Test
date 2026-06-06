@@ -25,7 +25,7 @@ public class SequenceManager : MonoBehaviour
 
     public bool CanPlayerStartSequence()
     {
-        if (PlayerInstanceData.CurrentPlayerStepIndex > sequenceInfos.Length)
+        if (PlayerInstanceData.CurrentPlayerStepIndex >= sequenceInfos.Length)
         {
             return false;
         }
