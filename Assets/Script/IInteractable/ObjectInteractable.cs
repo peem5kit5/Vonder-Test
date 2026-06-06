@@ -4,37 +4,43 @@ public class ObjectInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField] private string itemId = "item0001";
 
+    private PlayerInstanceData PlayerInstanceData => GameManager.Instance.PlayerInstanceData;
+    private SequenceManager SequenceManager => GameManager.Instance.SequenceManager;
+    private ArrowIndicatorUI ArrowIndicatorUI => GameManager.Instance.ArrowIndicatorUI;
+    private NotificationManager NotificationManager => GameManager.Instance.NotificationManager;
+
     public string ItemId => itemId;
 
     public void OnEnable()
     {
-        GameManager.Instance.PlayerInstanceData.OnReceiveNewItem += OnGetItem;
-        GameManager.Instance.ArrowIndicatorUI.SetTarget(transform);
+        // it can be more organized and maintainable in bigger project.
+        PlayerInstanceData.OnReceiveNewItem += OnGetItem;
+        ArrowIndicatorUI.SetTarget(transform);
     }
 
     public void Interact()
     {
-        GameManager.Instance.PlayerInstanceData.AddItem(itemId);
+        PlayerInstanceData.AddItem(itemId);
         Destroy(gameObject);
-
-        GameManager.Instance.NotificationManager.ShowNotification($"Received Item : {itemId}");
     }
 
     private void OnGetItem(string itemId)
     {
         if (itemId == this.itemId)
         {
-            GameManager.Instance.ArrowIndicatorUI.SetTarget(null);
+            ArrowIndicatorUI.SetTarget(null);
         }
+
+        NotificationManager.ShowNotification($"Received Item : {itemId}");
     }
 
     private void OnDestroy()
     {
-        GameManager.Instance.PlayerInstanceData.OnReceiveNewItem -= OnGetItem;
+        PlayerInstanceData.OnReceiveNewItem -= OnGetItem;
     }
 
     public bool CanInteract()
     {
-        return GameManager.Instance.SequenceManager.CheckItemMetConditionForNextSequence(itemId);
+        return GameManager.Instance.SequenceManager.CheckItemMetConditionForSequence(itemId);
     }
 }

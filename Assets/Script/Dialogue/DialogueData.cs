@@ -8,6 +8,5 @@ public class DialogueData : ScriptableObject
     public string Dialogue;
 
     [Header("Additional")]
-    public bool IsPauseDialogueAfterFinishTyping;
     public bool IsCameraTargetSpeaker;
 }

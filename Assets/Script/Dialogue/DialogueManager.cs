@@ -26,20 +26,28 @@ public class DialogueManager : MonoBehaviour
     private DialogueData[] dialogueData;
     private int dataIndex;
 
-    private Action onResumeSequence;
-    private Action onReachFinishDialogue;
-
     private bool isTyping;
     private CancellationTokenSource typingCts;
 
     private Dictionary<string, Transform> dialogueCameraTargets = new();
 
-    private bool isHoldDialogue;
+    private bool isDialogueStarted;
 
     public void Initialize()
     {
         Hide();
-        continueButton.onClick.AddListener(Advance);
+        continueButton.onClick.AddListener(() => 
+        {
+            if (isTyping)
+            {
+                CancelTyping();
+                lineText.text = dialogueData[dataIndex].Dialogue;
+                return;
+            }
+
+            Hide();
+            GameManager.Instance.SequenceManager.ResumeSequence();
+        });
         dialogueCameraTargets.Clear();
     }
 
@@ -48,16 +56,11 @@ public class DialogueManager : MonoBehaviour
         dialogueCameraTargets.Add(targetId, target);
     }
 
-    public void Show(DialogueDataList list, Action onResumeSequence, Action onReachFinishDialogue)
+    public void SetUpDialogue(DialogueDataList list)
     {
-        this.onResumeSequence = onResumeSequence;
-        this.onReachFinishDialogue = onReachFinishDialogue;
-
         dialogueData = list.Data;
         dataIndex = 0;
-
-        ToggleCanvasGroup(true);
-        DisplayLine();
+        isDialogueStarted = false;
     }
 
     private void ToggleCanvasGroup(bool isShow)
@@ -75,30 +78,18 @@ public class DialogueManager : MonoBehaviour
 
     public void Advance()
     {
+        if (!isDialogueStarted)
+        {
+            isDialogueStarted = true;
+            ToggleCanvasGroup(true);
+            DisplayLine();
+            return;
+        }
+
         if (!panelCanvasGroup.interactable)
         {
             ToggleCanvasGroup(true);
         }
-
-        if (isTyping)
-        {
-            CancelTyping();
-            lineText.text = dialogueData[dataIndex].Dialogue;
-            return;
-        }
-
-        bool isPause = dialogueData[dataIndex].IsPauseDialogueAfterFinishTyping;
-
-        if (isPause && !isHoldDialogue)
-        {
-            isHoldDialogue = true;
-
-            onResumeSequence?.Invoke();
-            Hide();
-            return;
-        }
-
-        isHoldDialogue = false;
 
         dataIndex++;
 
@@ -106,7 +97,6 @@ public class DialogueManager : MonoBehaviour
 
         if (isReachedDialogueLength)
         {
-            onReachFinishDialogue?.Invoke();
             Hide();
             return;
         }
@@ -160,6 +150,7 @@ public class DialogueManager : MonoBehaviour
     public void TestDialogue()
     {
         if (testDialogueDataList == null) return;
-        Show(testDialogueDataList, () => Debug.Log("Test dialogue resume. "), () => Debug.Log("Test dialogue reached max length. "));
+        SetUpDialogue(testDialogueDataList);
+        Advance();
     }
 }

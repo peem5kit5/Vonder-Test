@@ -24,22 +24,6 @@ MonoBehaviour:
   m_Markers:
     m_Objects:
     - {fileID: -3121734608887245540}
---- !u!114 &-8539338864391090150
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
-  m_Name: Signal Emitter
-  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 2.3666666666666667
-  m_Retroactive: 0
-  m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: aa7435c3aa30a764187930403514cccd, type: 2}
 --- !u!114 &-7920111226376512013
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,6 +164,7 @@ MonoBehaviour:
     - {fileID: 6641724138381023285}
     - {fileID: -6569014793231929686}
     - {fileID: 3115876972872810358}
+    - {fileID: 1635655849374042158}
 --- !u!114 &-5006393696367337133
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -266,6 +251,22 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &-2320745821755292243
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
+  m_Time: 2.35
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: aa7435c3aa30a764187930403514cccd, type: 2}
 --- !u!114 &-1308464401009915372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,6 +377,22 @@ MonoBehaviour:
   m_Markers:
     m_Objects:
     - {fileID: 3361229733092361238}
+--- !u!114 &1635655849374042158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
+  m_Time: 2.3333333333333335
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 6defc78d3ba8b3b4bb340f9c9d511aea, type: 2}
 --- !u!114 &2560960883312929800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,6 +418,7 @@ MonoBehaviour:
     m_Objects:
     - {fileID: 2681565753763618600}
     - {fileID: -3403917581417362674}
+    - {fileID: 6705416805797574216}
 --- !u!114 &2583757193254848508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -424,7 +442,7 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects:
-    - {fileID: -8539338864391090150}
+    - {fileID: -2320745821755292243}
 --- !u!114 &2681565753763618600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -558,7 +576,7 @@ MonoBehaviour:
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
     m_Recordable: 0
-    m_PostExtrapolationMode: 1
+    m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0.03333333333333333
@@ -673,6 +691,22 @@ MonoBehaviour:
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 6defc78d3ba8b3b4bb340f9c9d511aea, type: 2}
+--- !u!114 &6705416805797574216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
+  m_Time: 2.3333333333333335
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: c0575649433b6c54f99ae4ed11be831f, type: 2}
 --- !u!114 &7106588275573266076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -723,7 +757,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 2.3666666666666667
+    m_Start: 2.3333333333333335
     m_ClipIn: 0
     m_Asset: {fileID: -5201331250067040175}
     m_Duration: 3.3666666666666667

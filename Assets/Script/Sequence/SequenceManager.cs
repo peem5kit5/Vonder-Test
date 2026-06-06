@@ -38,7 +38,7 @@ public class SequenceManager : MonoBehaviour
         return true;
     }
 
-    public bool CheckItemMetConditionForNextSequence(string itemId)
+    public bool CheckItemMetConditionForSequence(string itemId)
     {
         int currentStepIndex = PlayerInstanceData.CurrentPlayerStepIndex;
 
@@ -63,6 +63,8 @@ public class SequenceManager : MonoBehaviour
 
         CurrentSequenceIndex = index;
         CurrentSequenceInfo  = sequenceInfos[index];
+
+        GameManager.Instance.DialogueManager.SetUpDialogue(CurrentSequenceInfo.GetDialogueDataList());
 
         GameManager.Instance.NotificationManager.ShowNotification($"Start Sequence {CurrentSequenceIndex + 1}");
 
@@ -90,7 +92,6 @@ public class SequenceManager : MonoBehaviour
 
     private void OnDirectorStopped(PlayableDirector director)
     {
-        dialogueSignalReceiver.Reset();
         GameManager.Instance.DialogueManager.Hide();
     }
 
