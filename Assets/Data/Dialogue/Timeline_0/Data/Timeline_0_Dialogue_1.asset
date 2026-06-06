@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   SpeakerName: NPC
   Dialogue: Hey, you. Can you help me for a moment?
-  IsPauseDialogueAfterFinishTyping: 1
+  IsPauseDialogueAfterFinishTyping: 0
   IsCameraTargetSpeaker: 1
