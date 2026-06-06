@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SequenceInfo
   dialogueDataList: {fileID: 11400000, guid: 88526c00ddd367346aa0c1cc52a5a18c, type: 2}
   director: {fileID: 464589952}
-  itemConditionId: item0001
+  itemConditionId: Coin
 --- !u!1 &484313308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,7 +2506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f46e0f9b2d307428a79ffeec5ebbeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectInteractable
-  itemId: item0001
+  itemId: Coin
 --- !u!1 &1168425203
 GameObject:
   m_ObjectHideFlags: 0
@@ -5613,7 +5613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SequenceManager
   sequenceContainer: {fileID: 1244665377}
-  dialogueSignalReceiver: {fileID: 0}
+  dialogueSignalReceiver: {fileID: 1022099278}
 --- !u!114 &1893230819
 MonoBehaviour:
   m_ObjectHideFlags: 0

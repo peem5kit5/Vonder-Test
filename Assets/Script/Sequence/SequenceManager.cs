@@ -64,7 +64,7 @@ public class SequenceManager : MonoBehaviour
         CurrentSequenceIndex = index;
         CurrentSequenceInfo  = sequenceInfos[index];
 
-        GameManager.Instance.NotificationManager.ShowNotification($"Start Sequence {CurrentSequenceIndex}");
+        GameManager.Instance.NotificationManager.ShowNotification($"Start Sequence {CurrentSequenceIndex + 1}");
 
         if (currentPlayableDirector != null)
         {
@@ -96,7 +96,7 @@ public class SequenceManager : MonoBehaviour
 
     public void StopSequence()
     {
-        GameManager.Instance.NotificationManager.ShowNotification($"End sequence {CurrentSequenceIndex}");
+        GameManager.Instance.NotificationManager.ShowNotification($"End sequence {CurrentSequenceIndex + 1}");
 
         if (currentPlayableDirector != null)
         {
