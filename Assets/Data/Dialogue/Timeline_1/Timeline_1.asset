@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b95497efa74c94ea05484e79115560, type: 3}
+  m_Name: Timeline_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueDataList
+  Data:
+  - {fileID: 11400000, guid: 23a4ddb44245dd2439e9832225c3b987, type: 2}
+  - {fileID: 11400000, guid: 086a31932d0409945a50013cc754be41, type: 2}
+  - {fileID: 11400000, guid: 5ba7961cf9ce14a458d077e93afbfd4a, type: 2}
+  - {fileID: 11400000, guid: 07410d3c05379554dbbc81862c994d35, type: 2}
