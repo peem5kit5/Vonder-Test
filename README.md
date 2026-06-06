@@ -90,11 +90,11 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 
 ---
 
-#  Know Issues (Unfinishes)
+#  Know Issues (Unfinishes) : 1 day remaining
 - Error log called sometimes in editor, SerializedObjectNotCreatableException: Object at index 0 is null This is believed to be related to Playable Director references not being properly assigned.
 - NPCs do not currently turn to face the player during dialogue sequences.
 
-# Design Observations & Future Improvements
+# Design Observations & Future Improvements : 1 day remaining
 - The current presentation flow feels closer to a tutorial sequence than a production-ready gameplay experience.
 - Some Signals overlap with Cinemachine Track functionality, creating redundancy and additional visual clutter in the Timeline.
 - The overall Timeline structure in this project could be simplified and organized further to improve maintainability.
@@ -103,43 +103,50 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 ---
 
 # Timestamp Work Breakdown
-
+---
 4/6/2569 [still in work day]
 
 | Time          | Task                           
 | ------------- | ------------------------------ 
-| 21:00 - 22:00 | Read requirements in pdf                         
-| 22:00 - 23:00 | Download Unity 6000.3.15f      
-| 23:00 - 23:30 | Roghly design program structure in Diagram (photo below)       
-| 23:30 - 00:30 | Setup project, Import Dotween, UniTask, Cinemachine and set GameManager.cs      
+| 21:00 - 22:00 | [Prepare] Read requirements in pdf                         
+| 22:00 - 23:00 | [Prepare] Download Unity 6000.3.15f      
+| 23:00 - 23:30 | [Prepare] Roghly design program structure in Diagram (photo below)       
+| 23:30 - 00:30 | [Setup] Setup project, Import Dotween, UniTask, Cinemachine and set GameManager.cs      
 
 <img width="1399" height="655" alt="image" src="https://github.com/user-attachments/assets/3217f3a9-a16f-4b55-8dbb-8b9862c882b0" />
 
-
+---
 5/6/2569 [still in work day]
-
+---
 | Time          | Task                           
 | ------------- | ------------------------------ 
-| 21:00 - 22:00 | [Initial] Test and learning how timeline signals & cinemachine track work. ( I hadn't used those much before this. )                        
-| 22:00 - 23:00 | [Initial] PlayerInstanceData scripting and adjust how it can handle in-game.   
-| 23:00 - 23:30 | [Initial] Sequence and Timeline handling with Script.    
-| 23:30 - 00:30 | Start scripting dialogue with testing dialogue. (with claude code help for lean codes, making test tool, and fixing bugs) 
-
-6/6/2569 [weekend]
-
-| Time          | Task                           
-| ------------- | ------------------------------ 
-| 10:00 - 12:00 | Interaction system and set unity scene.            
-| 13:00 - 18:00 | Setting unity scene, adding dialogue data, set timeline_0 and timeline_1, set signals, set object interact.
-| 23:45 - 00:00 | Split the changes in git and pushing system and major changes separately to ```origin/develop```.
-
-
-7/6/2569 [weekend]
-
-| Time          | Task                           
-| ------------- | ------------------------------ 
-| 00:00 - 01:35 | Split the changes in git and pushing system and major changes separately to origin/develop & fixing bug with polishing some text.
-| 03:00 - 03:50 | Fixed dialogue do not supported the advance per signal & writing README.
-| 12:00 - 14:00 | Prepared for delivery and wrote the README.
+| 21:00 - 22:00 | [Learning] Test and learning how timeline signals & cinemachine track work. ( I hadn't used those much before this. )                        
+| 22:00 - 23:00 | [Scripting] PlayerInstanceData scripting and adjust how it can handle in-game.   
+| 23:00 - 23:30 | [Scripting] Sequence and Timeline handling with Script.    
+| 23:30 - 00:30 | [Scripting & First Dialogue] Start scripting dialogue with testing dialogue. (with claude code help for lean codes, making test tool, and fixing bugs) 
 
 ---
+6/6/2569 [weekend]
+---
+| Time          | Task                           
+| ------------- | ------------------------------ 
+| 10:00 - 12:00 | [NPC Interaction] Scripting npc interaction system and set unity scene.            
+| 13:00 - 18:00 | [Timeline Asset Creating] Setting unity scene, adding dialogue data, set timeline_0 and timeline_1, set signals, set object interact.
+| 23:45 - 00:00 | [Test & Pushing to Git] Test & Split the changes in git and pushing system and major changes separately to ```origin/develop```.
+
+---
+7/6/2569 [weekend]
+---
+| Time          | Task                           
+| ------------- | ------------------------------ 
+| 00:00 - 01:35 | [Test & Pushing to Git] Split the changes in git and pushing system and major changes separately to origin/develop & fixing bug with polishing some text.
+| 03:00 - 03:50 | [Fixing Bug] Fixed dialogue do not supported the advance per signal & writing README.
+| 12:00 - 14:00 | [Get ready to delivered] Prepared for delivery and wrote the README.
+
+---
+# AI Usage in this project was 10%
+## Claude Code
+for finding bugs and for creating boilerplate codes that anyone might making it for million times such as Singleton GameManager, cancellation token handling and typing Dialogue function.
+
+## ChatGPT
+for making README template & learning timeline.
