@@ -86,7 +86,7 @@ You can see my custom signal receiver ```StartDialogueSignalReceiver.cs```
 
 ```ArrowIndicatorUI.cs``` and ```NotificationManager.cs``` stored in the GameManager (Singleton) so it can be accessed by any class.
 
-and item can triggered those via their own functions like OnEnable(); for arrow indicator can set target on it or Interact(); to called any binding methods when interact this item included notification (this function is defined in the IInteractable interface and implemented by ```NPCInteract.cs``` as well.)
+and item can triggered those via their own functions like OnEnable(); for arrow indicator can set target on it or Interact(); to called any binding methods when interact this item included notification (this function is defined in the ```IInteractable``` interface and implemented by ```NPCInteract.cs``` as well.)
 
 ---
 
