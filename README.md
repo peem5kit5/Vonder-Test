@@ -72,7 +72,7 @@ Timeline signals in this scene were used for:
 # How Dialogue UI is Triggered
 
 ```DialogueManager.cs``` was setup when player start sequence (by checking player step index data in ```PlayerInstanceData.cs```)
-and inside of ```SequenceInfo.cs``` there is a ```DialogueDataList.cs``` that contains ```DialogueData.cs``` as scriptable object for set speaker's name, dialogue and camera followed trigger flag for more immersive dialogue.
+and inside of ```SequenceInfo.cs``` there is a ```DialogueDataList.cs``` that contains ```DialogueData.cs``` as scriptable object to stored set speaker's name, dialogue and camera followed trigger flag for more immersive dialogue.
 
 and when dialogues were loaded to manager.
 
