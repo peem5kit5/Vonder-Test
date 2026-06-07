@@ -92,13 +92,13 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 
 #  Know Issues (Unfinishes) : 1 day remaining
 - Error log called sometimes in editor, SerializedObjectNotCreatableException: Object at index 0 is null This is believed to be related to Playable Director references not being properly assigned.
-- NPCs do not currently turn to face the player during dialogue sequences.
+- NPC do not currently turn to face the player during dialogue sequences.
 
-# Design Observations & Future Improvements : 1 day remaining
-- The current presentation flow feels closer to a tutorial sequence than a production-ready gameplay experience.
-- Some Signals overlap with Cinemachine Track functionality, creating redundancy and additional visual clutter in the Timeline.
+# Design Observations & Future Improvements
+- The ```DialogueData.cs``` stored boolean IsCameraTargetSpeaker is redundant because Timeline Camera Tracks already handle camera focus and transitions between speakers.(but it more effective and faster while dialogue playing we don't need to assign every frames.]
 - The overall Timeline structure in this project could be simplified and organized further to improve maintainability.
 - Addressables were included in anticipation of future asset-loading requirements, but they are not currently necessary for the scope of this prototype and may be considered overengineering.
+- There is currently no game content, but it can be added.
 
 ---
 
