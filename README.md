@@ -104,7 +104,7 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 
 # Timestamp Work Breakdown
 ---
-4/6/2569 [still in work day]
+4/6/2569 [Business day]
 ---
 
 | Time          | Task                           
@@ -117,7 +117,7 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 <img width="1399" height="655" alt="image" src="https://github.com/user-attachments/assets/3217f3a9-a16f-4b55-8dbb-8b9862c882b0" />
 
 ---
-5/6/2569 [still in work day]
+5/6/2569 [Business day]
 ---
 | Time          | Task                           
 | ------------- | ------------------------------ 
@@ -127,7 +127,7 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 | 23:30 - 00:30 | [Scripting & First Dialogue] Start scripting dialogue with testing dialogue. (with claude code help for lean codes, making test tool, and fixing bugs) 
 
 ---
-6/6/2569 [weekend]
+6/6/2569 [Weekend]
 ---
 | Time          | Task                           
 | ------------- | ------------------------------ 
@@ -136,7 +136,7 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 | 23:45 - 00:00 | [Test & Pushing to Git] Test & Split the changes in git and pushing system and major changes separately to ```origin/develop```.
 
 ---
-7/6/2569 [weekend]
+7/6/2569 [Weekend]
 ---
 | Time          | Task                           
 | ------------- | ------------------------------ 
