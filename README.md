@@ -111,6 +111,9 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 ---
 
 # Timestamp Work Breakdown
+## Total time spent: 
+19 hours 40 minutes
+
 ---
 4/6/2569 [Business day] Time spent: 3 hours 30 minutes.
 ---
@@ -144,7 +147,7 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 | 23:45 - 00:00 | [Test & Pushing to Git] Test & Split the changes in git and pushing system and major changes separately to ```origin/develop```.
 
 ---
-7/6/2569 [Weekend] Time spent: 7 hours 15 minutes.
+7/6/2569 [Weekend] Time spent: 5 hours 25 minutes.
 ---
 | Time          | Task                           
 | ------------- | ------------------------------ 
