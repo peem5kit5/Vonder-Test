@@ -150,7 +150,7 @@ and item can triggered those via their own functions like OnEnable(); for arrow 
 | ------------- | ------------------------------ 
 | 00:00 - 01:35 | [Test & Pushing to Git] Split the changes in git and pushing system and major changes separately to origin/develop & fixing bug with polishing some text.
 | 03:00 - 03:50 | [Fixing Bug] Fixed dialogue do not supported the advance per signal & writing README.
-| 12:00 - 14:00 | [Get ready to delivered] Prepared for delivery and wrote the README.
+| 11:00 - 12:30 | [Get ready to delivered] Prepared for delivery, wrote the README and video recording.
 
 ---
 # AI Usage in this project was 10%
