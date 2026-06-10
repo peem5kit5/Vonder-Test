@@ -162,3 +162,17 @@ for finding bugs and for creating boilerplate codes that anyone might making it 
 
 ## ChatGPT
 for making README template & learning timeline.
+
+# Additional Packages
+
+# UniTask
+https://github.com/cysharp/unitask
+- for reduce IEnumberator problematic in Typing Dialogue or Dotween Animation
+
+# DoTween
+https://dotween.demigiant.com/
+- for animating notification ui
+
+# Addressables
+Built In Unity Registry
+- my initial idea was loading the time assets via addressable or loading the object but it not that necessary when i scoping, and I forgot to remove -_-
